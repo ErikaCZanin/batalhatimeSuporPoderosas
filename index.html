@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./main.css">
+    <title>Batalha SuporPoderosas</title>
+</head>
+<body>
+        <div class="logo">
+          <img src="https://i.postimg.cc/GpCxYmvc/title.png" alt="Logo da Imersão Dev" />
+        </div>
+      
+        <main class="conteudo-jogo">
+          <div class="container">
+            <div class="titulo">
+              <h2>Força ou Queda</h2>
+            </div>
+            <div>
+              <h2>Escolha 3 personagem para seu time</h2>
+              <label>Digite seu nome</label>
+              <input type="text" id="nomeJogador"></input>
+            </div>
+            <button onclick="jogar()">Iniciar batalha</button>
+            <div id="linha-horizontal"></div>
+            <div class="resultadoJogo">
+              <p><strong>Seu time: </strong><span id="timeUsuario" class="resultado"></span></p>
+              <p><strong>Time do computador: </strong><span id="timeComputador" class="resultado"></span></p>
+              <p><strong>Ganhador: </strong><span id="resultadoBatalha" class=""></span></p>
+            </div>
+          </div>
+          </div>
+        </main>
+</body>
+<script src="./main.js"></script>
+</html>

@@ -1,0 +1,69 @@
+body {
+    background: url("https://live.staticflickr.com/65535/54431224484_d6fd962692_c.jpg") no-repeat center
+      center fixed;
+    background-size: cover;
+    font-family: "Gabarito", sans-serif;
+    margin: 20px;
+  }
+  
+  .logo {
+    text-align: end;
+  }
+  
+  .logo img {
+    width: 15%;
+  }
+  
+  /* Caixa principal do jogo */
+  .conteudo-jogo {
+    margin: 30px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Títulos e textos */
+  h2,
+  p {
+    color: white;
+  }
+  .container {
+    display:flex;
+    flex-direction: column;
+    min-width: 550px;
+    min-height: 300px;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 14px;
+    border-radius: 8px;
+  }
+  
+  input {
+    margin-right: 8px;
+    border-radius: 8px;
+    border:none;
+    padding: 8px;
+  }
+  
+  #linha-horizontal {
+      width: 100%;
+      border: 0.5px solid white;
+    margin-top: 14px;
+    margin-bottom: 14px;
+  }
+  
+  .titulo h2{
+    font-size:18px;
+    text-align: center;
+    margin-bottom:2px;
+    margin-top:4px;
+  }
+  
+  button {
+    width: 120px;
+    height: 35px;
+    border-radius: 20px;
+    margin-top:14px;
+    border:none;
+    cursor:pointer;
+  }
