@@ -1,69 +1,98 @@
-function jogar(){
-    //Lista com 3 jogados escolhidos e vilões / Forças dos personagens 
-    personagemUsuario = [" "," "," "]
-    viloesComputador = [" "," "," "]
-    
-    forcapersonagemUsuario = 0
-    forcaviloesComputador = 0 
-     
-    
-    //Calcular força de cada jogador, e depois somar para saber a força do time
-    for(let i=0; i<3; i++){
-      escolhaPersonagem = prompt ("Digite o nome do seu personagem: " + (i + 1))
-      personagemUsuario[i] = escolhaPersonagem
-      //Calcular a força de cada jogador do time do computador 
-      forcapersonagemUsuario += Math.floor(Math.random() * 10) + 1 
+function jogar() {
+  //Lista com 3 jogados escolhidos e vilões / Forças dos personagens 
+  personagemUsuario = [" ", " ", " "]
+  viloesComputador = [" ", " ", " "]
+
+  forcapersonagemUsuario = 0
+  forcaviloesComputador = 0
+
+
+  //Calcular força de cada jogador, e depois somar para saber a força do time
+  for (let i = 0; i < 3; i++) {
+    escolhaPersonagem = prompt("Digite o nome do seu personagem: " + (i + 1))
+    personagemUsuario[i] = escolhaPersonagem
+    //Calcular a força de cada jogador do time do computador 
+    forcapersonagemUsuario += Math.floor(Math.random() * 10) + 1
+  }
+  alert("Agora seus personagens são: " + personagemUsuario)
+
+  for (let i = 0; i < 3; i++) {
+    indiceAleatorio = Math.floor(Math.random() * 5)
+    viloesPossiveis = ["Mojo Jojo", "HIM (Ele)", "Fuzzy Confusão", "Princesa Maisgrana", "Gangue Gangrena"]
+    viloesComputador[i] = viloesPossiveis[indiceAleatorio]
+    //Calcular a força de cada jogador do time do computador 
+    forcaviloesComputador += Math.floor(Math.random() * 10) + 1
+  }
+
+  alert("Viloes: " + viloesComputador)
+
+  //Comparar os dois times para saber quem vencenu
+
+  ganhadorID = 0
+
+  //1 usuario
+  //2 computador 
+  //3 empate
+  if (forcapersonagemUsuario > forcaviloesComputador) {
+    ganhadorID = 1
+    alert("Você ganhou! Sua força: " + forcapersonagemUsuario + " Força do time vilão: " + forcaviloesComputador)
+  }
+  else {
+    if (forcapersonagemUsuario < forcaviloesComputador) {
+      ganhadorID = 2
+      alert("Você perdeu! Sua força: " + forcapersonagemUsuario + " Força do time vilão: " + forcaviloesComputador)
     }
-    alert("Agora seus personagens são: " + personagemUsuario)
-    
-    for(let i=0; i<3; i++){
-      indiceAleatorio = Math.floor(Math.random() * 5)
-      viloesPossiveis = ["Mojo Jojo","HIM (Ele)","Fuzzy Confusão","Princesa Maisgrana","Gangue Gangrena"]
-      viloesComputador[i] = viloesPossiveis[indiceAleatorio]
-      //Calcular a força de cada jogador do time do computador 
-      forcaviloesComputador += Math.floor(Math.random() * 10) + 1
+    else {
+      ganhadorID = 3
+      alert("Empate! Sejam amigos! Sua força: " + forcapersonagemUsuario + " Força do time vilão: " + forcaviloesComputador)
     }
-    
-    alert("Viloes: "+ viloesComputador)
-    
-    //Comparar os dois times para saber quem vencenu
-    
-       ganhadorID = 0
-       
-      //1 usuario
-      //2 computador 
-       //3 empate
-    if(forcapersonagemUsuario > forcaviloesComputador) {
-      ganhadorID = 1
-      alert("Você ganhou! Sua força: "+forcapersonagemUsuario+" Força do time vilão: "+forcaviloesComputador)
+  }
+
+  ganhadorNome = ""
+  if (ganhadorID == 1) {
+    ganhadorNome = "Time SuperPoderosas"
+  }
+  else {
+    if (ganhadorID == 2) {
+      ganhadorNome = "Time vilões"
     }
-    else{
-      if (forcapersonagemUsuario < forcaviloesComputador){
-        ganhadorID = 2
-        alert("Você perdeu! Sua força: "+forcapersonagemUsuario+" Força do time vilão: "+forcaviloesComputador)
-      }
-      else{
-        ganhadorID = 3
-        alert("Empate! Sejam amigos! Sua força: "+forcapersonagemUsuario+" Força do time vilão: "+forcaviloesComputador)
-      }
+    else {
+      ganhadorNome = "Empate, sejam amigos!"
     }
-      
-     ganhadorNome = ""
-     if(ganhadorID ==1){
-       ganhadorNome = "Time SuperPoderosas" 
-     }
-      else{
-        if(ganhadorID == 2){
-          ganhadorNome = "Time vilões"
+  }
+
+  document.getElementById('timeUsuario').innerText = personagemUsuario;
+  document.getElementById('timeComputador').innerText = viloesComputador;
+  document.getElementById('resultadoBatalha').innerText = ganhadorNome;
+}
+
+
+document.querySelectorAll('.btnList').forEach(item => {
+  item.addEventListener('click', function () {
+    const navBar = document.querySelector('.navbar');
+    const content = document.querySelector('.content');
+    const isSmallScreen = window.matchMedia('(max-width: 390px)').matches;
+
+    if (navBar) {
+      if (navBar.style.height && navBar.style.height !== '0px') {
+        navBar.style.height = '0px';
+        item.style.width = '30%';
+
+        // Remove a margem se for tela pequena
+        if (isSmallScreen && content) {
+          content.style.marginTop = '0px';
         }
-        else {
-          ganhadorNome = "Empate, sejam amigos!"
+      } else {
+        navBar.style.height = navBar.scrollHeight + 'px';
+        item.style.width = '100%';
+
+        // Adiciona a margem se for tela pequena
+        if (isSmallScreen && content) {
+          content.style.marginTop = '210px';
+          item.style.width = '60%';
         }
       }
-      
-      document.getElementById('timeUsuario').innerText = personagemUsuario;
-      document.getElementById('timeComputador').innerText = viloesComputador;
-      document.getElementById('resultadoBatalha').innerText = ganhadorNome;
     }
-    
-    
+  });
+});
+

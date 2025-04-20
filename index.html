@@ -1,36 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./main.css">
-    <title>Batalha SuporPoderosas</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./controle-de-video-game (2).png" type="image/png">
+  <link rel="stylesheet" type="text/css" href="./btnGeral.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" type="text/css" href="./main.css">
+  <title>Batalha SuporPoderosas</title>
 </head>
+
 <body>
-        <div class="logo">
-          <img src="https://i.postimg.cc/GpCxYmvc/title.png" alt="Logo da Imersão Dev" />
-        </div>
-      
-        <main class="conteudo-jogo">
-          <div class="container">
-            <div class="titulo">
-              <h2>Força ou Queda</h2>
-            </div>
-            <div>
-              <h2>Escolha 3 personagem para seu time</h2>
-              <label>Digite seu nome</label>
-              <input type="text" id="nomeJogador"></input>
-            </div>
-            <button onclick="jogar()">Iniciar batalha</button>
-            <div id="linha-horizontal"></div>
-            <div class="resultadoJogo">
-              <p><strong>Seu time: </strong><span id="timeUsuario" class="resultado"></span></p>
-              <p><strong>Time do computador: </strong><span id="timeComputador" class="resultado"></span></p>
-              <p><strong>Ganhador: </strong><span id="resultadoBatalha" class=""></span></p>
-            </div>
-          </div>
-          </div>
-        </main>
+  <div class="logo">
+    <img src="https://i.postimg.cc/GpCxYmvc/title.png" alt="Logo da Imersão Dev" />
+  </div>
+  <header>
+    <nav class="nav">
+      <button class="btnList"><span><i class="bi bi-list"></i></span></button>
+      <div class="navbar" id="navbarNav">
+        <h1>Jogo pessoa noturna</h1>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="https://jogos-imersao-alura-042025.vercel.app/">Jogos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/ErikaCZanin/batalhatimeSuporPoderosas">GitHub</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.linkedin.com/in/erikaczanin/">Linkedin</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <section class="conteudo-jogo">
+    <div class="container">
+      <div class="titulo">
+        <h2>Força ou Queda</h2>
+      </div>
+      <div>
+        <h2>Escolha 3 personagem para seu time</h2>
+        <label>Digite seu nome</label>
+        <input type="text" id="nomeJogador"></input>
+      </div>
+      <button onclick="jogar()">Iniciar batalha</button>
+      <div id="linha-horizontal"></div>
+      <div class="resultadoJogo">
+        <p><strong>Seu time: </strong><span id="timeUsuario" class="resultado"></span></p>
+        <p><strong>Time do computador: </strong><span id="timeComputador" class="resultado"></span></p>
+        <p><strong>Ganhador: </strong><span id="resultadoBatalha" class=""></span></p>
+      </div>
+    </div>
+    </div>
+  </section>
 </body>
 <script src="./main.js"></script>
+
 </html>

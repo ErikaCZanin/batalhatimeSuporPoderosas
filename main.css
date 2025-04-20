@@ -1,69 +1,100 @@
 body {
-    background: url("https://live.staticflickr.com/65535/54431224484_d6fd962692_c.jpg") no-repeat center
-      center fixed;
-    background-size: cover;
-    font-family: "Gabarito", sans-serif;
-    margin: 20px;
-  }
-  
-  .logo {
-    text-align: end;
-  }
-  
-  .logo img {
-    width: 15%;
-  }
-  
-  /* Caixa principal do jogo */
-  .conteudo-jogo {
-    margin: 30px;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-  }
-  
-  /* Títulos e textos */
-  h2,
-  p {
-    color: white;
-  }
-  .container {
-    display:flex;
-    flex-direction: column;
-    min-width: 550px;
-    min-height: 300px;
-    background: rgba(0, 0, 0, 0.8);
-    color: white;
-    padding: 14px;
-    border-radius: 8px;
-  }
-  
-  input {
-    margin-right: 8px;
-    border-radius: 8px;
-    border:none;
-    padding: 8px;
-  }
-  
-  #linha-horizontal {
-      width: 100%;
-      border: 0.5px solid white;
-    margin-top: 14px;
-    margin-bottom: 14px;
-  }
-  
-  .titulo h2{
-    font-size:18px;
-    text-align: center;
-    margin-bottom:2px;
-    margin-top:4px;
-  }
-  
-  button {
-    width: 120px;
-    height: 35px;
-    border-radius: 20px;
-    margin-top:14px;
-    border:none;
-    cursor:pointer;
-  }
+  background: url("https://live.staticflickr.com/65535/54431224484_d6fd962692_c.jpg") no-repeat center center fixed;
+  background-size: cover;
+  font-family: "Gabarito", sans-serif;
+  margin: 20px;
+}
+
+.logo {
+  position: absolute;
+  left: 30px;
+  width: 190px;
+  background-color: black;
+  padding: 12px;
+  border-radius: 8px;
+}
+
+.logo img {
+  width: 100%;
+}
+
+/* Caixa principal do jogo */
+.conteudo-jogo {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 89vh;
+}
+
+/* Títulos e textos */
+.container h2,
+.container p {
+  color: white;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-width: 650px;
+  padding: 28px;
+  background: rgba(0, 0, 0, 0.903);
+  color: white;
+  border-radius: 8px;
+}
+
+input {
+  margin-right: 8px;
+  border-radius: 8px;
+  border: none;
+  padding: 8px;
+}
+
+#linha-horizontal {
+  width: 100%;
+  border: 0.5px solid white;
+  margin-top: 14px;
+  margin-bottom: 14px;
+}
+
+.titulo h2 {
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 2px;
+  margin-top: 4px;
+}
+
+.container button {
+  width: 120px;
+  height: 35px;
+  border-radius: 20px;
+  margin-top: 14px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.container button:active,
+.container button:hover {
+  background-color: #EF8818;
+}
+
+
+button {
+  border: none;
+  padding: 10px 20px;
+  margin: 0 20px;
+  font-size: 1em;
+  ;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 8px;
+}
+
+.container button {
+  display: flex;
+  width: 150px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
