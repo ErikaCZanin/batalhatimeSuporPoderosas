@@ -12,16 +12,39 @@ header {
         width: 100vw;
         margin-right: 0 !important;
         padding: 8px 0;
-        margin-top: 12px;
+        margin-top: 50px;
     }
 
     .navbar {
         width: 60%;
     }
 
+    .conteudo-jogo {
+        display: flex;
+        flex-direction: column;
+        min-height: 89vh !important;
+        min-width: 0 !important;
+        justify-content: center;
+        align-items: center;
+        padding: 0 !important;
+    }
+
+
+    .resultadoJogo {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        width: 100%;
+    }
+
     .container {
-        min-height: 94vh !important;
+        display: flex;
+        flex-direction: column;
+        min-height: 50vh !important;
         padding: 0 14px;
+        min-width: 0 !important;
+        justify-content: center;
+        align-items: center;
     }
 
     header {
@@ -32,6 +55,14 @@ header {
     .content button {
         margin-top: 8px;
     }
+
+    .inputGame {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
 
 }
 
@@ -84,7 +115,7 @@ header {
 
 .nav-item:hover {
     display: flex;
-    background-color: #285083;
+    background-color: #EF8818;
     width: 110PX;
     border-radius: 8px;
 }

@@ -1,7 +1,7 @@
 body {
   background: url("https://live.staticflickr.com/65535/54431224484_d6fd962692_c.jpg") no-repeat center center fixed;
   background-size: cover;
-  font-family: "Gabarito", sans-serif;
+  font-family: "Oranienbaum", Arial, sans-serif;
   margin: 20px;
 }
 
@@ -41,6 +41,7 @@ body {
   background: rgba(0, 0, 0, 0.903);
   color: white;
   border-radius: 8px;
+  transition: all 0.4s ease;
 }
 
 input {
