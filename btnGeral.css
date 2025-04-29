@@ -50,7 +50,6 @@ header {
         display: flex;
         flex-direction: column;
         padding: 8px 14px !important;
-        margin: 0 8px;
         min-width: auto !important;
         justify-content: center;
         align-items: center;
