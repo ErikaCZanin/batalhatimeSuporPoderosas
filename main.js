@@ -97,7 +97,7 @@ document.querySelectorAll('.btnList').forEach(item => {
         // Ajusta a largura de acordo com o tamanho da tela
         if (isSmallScreen) {
           item.style.width = '60%';
-          content.style.marginTop = (navBar.scrollHeight + 150) + 'px';
+          content.style.marginTop = navBar.scrollHeight + 'px';
           body.style.height = '110%';
           html.style.height = '110%';
         } else {
