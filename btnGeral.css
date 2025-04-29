@@ -7,16 +7,21 @@ header {
 
 
 
-@media (max-width:390px) {
+@media (max-width:768px) {
     .nav {
-        width: 100vw;
+        width: 100% !important;
         margin-right: 0 !important;
         padding: 8px 0;
         margin-top: 50px;
+        margin: 70px 0 !important;
     }
 
+    .btnList {
+        width: 30%;
+    }
     .navbar {
-        width: 60%;
+        width: 60% !important;
+
     }
 
     .conteudo-jogo {
@@ -40,9 +45,8 @@ header {
     .container {
         display: flex;
         flex-direction: column;
-        min-height: 50vh !important;
         padding: 0 14px;
-        min-width: 0 !important;
+        min-width: auto !important;
         justify-content: center;
         align-items: center;
     }
@@ -62,6 +66,13 @@ header {
         justify-content: center;
         align-items: center;
     }
+
+    .logo {
+        top: 40px !important;
+        left: 50% !important;
+        transform: translateX(-50%);
+        max-width: 210px !important;
+      }
     
 
 }
@@ -93,7 +104,7 @@ header {
 }
 
 .nav {
-    margin-right: 38px;
+    margin-top: 30px;
     position: absolute;
     top: 20px;
     width: 250px;

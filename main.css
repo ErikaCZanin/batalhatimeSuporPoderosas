@@ -1,8 +1,18 @@
+html, body {
+  height: 100%;
+}
+
+html {
+  background-color: black;
+}
+
 body {
-  background: url("https://live.staticflickr.com/65535/54431224484_d6fd962692_c.jpg") no-repeat center center fixed;
-  background-size: cover;
+  margin: 0;
+  padding: 0;
   font-family: "Oranienbaum", Arial, sans-serif;
-  margin: 20px;
+  color: white;
+  position: relative;
+  background: url("https://live.staticflickr.com/65535/54431224484_d6fd962692_c.jpg") center center / cover no-repeat;
 }
 
 .logo {
@@ -24,13 +34,25 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 89vh;
+  height: 100%;
 }
 
 /* Títulos e textos */
 .container h2,
 .container p {
   color: white;
+}
+
+footer {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  height: 2.5rem;
+  width: 100%;
+  bottom: 0;
+  background-color: black;
 }
 
 .container {
