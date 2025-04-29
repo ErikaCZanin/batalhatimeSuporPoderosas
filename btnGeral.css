@@ -12,8 +12,7 @@ header {
         width: 100% !important;
         margin-right: 0 !important;
         padding: 8px 0;
-        margin-top: 50px;
-        margin: 70px 0 !important;
+        margin: 40px 0 !important;
         right: 0 !important;
     }
 
@@ -54,6 +53,7 @@ header {
         min-width: auto !important;
         justify-content: center;
         align-items: center;
+        margin: 80px 8px !important;
     }
 
     header {
@@ -73,7 +73,7 @@ header {
     }
 
     .logo {
-        top: 40px !important;
+        top: 20px !important;
         left: 50% !important;
         transform: translateX(-50%);
         max-width: 210px !important;
