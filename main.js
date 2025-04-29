@@ -98,8 +98,8 @@ document.querySelectorAll('.btnList').forEach(item => {
         if (isSmallScreen) {
           item.style.width = '60%';
           content.style.marginTop = (navBar.scrollHeight + 90) + 'px';
-          body.style.height = '110%';
-          html.style.height = '110%';
+          body.style.height = '120%'; 
+          html.style.height = '120%';
         } else {
           item.style.width = '100%';
         }
