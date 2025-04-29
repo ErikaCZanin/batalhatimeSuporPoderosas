@@ -15,7 +15,13 @@ body {
   background: url("https://live.staticflickr.com/65535/54431224484_d6fd962692_c.jpg") center center / cover no-repeat;
 }
 
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .logo {
+  top: 20px;
   position: absolute;
   left: 30px;
   width: 190px;
@@ -30,7 +36,6 @@ body {
 
 /* Caixa principal do jogo */
 .conteudo-jogo {
-  padding: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
