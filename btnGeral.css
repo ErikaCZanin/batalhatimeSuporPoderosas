@@ -42,10 +42,15 @@ header {
         width: 100%;
     }
 
+    .container h2 {
+        text-align: center;
+      }
+
     .container {
         display: flex;
         flex-direction: column;
-        padding: 0 14px;
+        padding: 8px 14px !important;
+        margin: 0 8px;
         min-width: auto !important;
         justify-content: center;
         align-items: center;
